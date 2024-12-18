@@ -41,6 +41,7 @@
   display: flex;
   gap: 12px;
   padding: 8px 12px;
+  width: fit-content;
   align-items: center;
 
   border: none;
@@ -49,4 +50,23 @@
 
   font-size: 16px;
   font-weight: 600;
+}
+
+.playButton {
+  display: inline-block;
+  width: 130px;
+  height: fit-content;
+
+  @include media(desktop) {
+    width: 170px;
+    height: 48px;
+  }
+}
+
+.buttonHover {
+  transition: scale 0.2s ease-out;
+
+  &:hover {
+    scale: 1.1;
+  }
 }
