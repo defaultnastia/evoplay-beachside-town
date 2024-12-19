@@ -1,0 +1,122 @@
+.heroBackground {
+  width: 100%;
+  height: 432px;
+
+  background-image: url('../img/hero/mobile/1x/heroBackground.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  @include image-2x('../img/hero/mobile/2x/heroBackground.png', 100%, 432px);
+
+  @include media(desktop) {
+    height: 625px;
+
+    background-image: url('../img/hero/desktop/1x/heroBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include image-2x('../img/hero/desktop/2x/heroBackground.png', 100%, 625px);
+  }
+}
+
+.heroContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding-top: 40px;
+
+  line-height: normal;
+
+  @include media(desktop) {
+    width: 50%;
+    padding-top: 283px;
+  }
+}
+
+.heroContent h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 64px;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+}
+
+.heroContent p {
+  color: $_header_color;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  max-width: 140px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    max-width: 100%;
+  }
+}
+
+#palmIcon {
+  position: absolute;
+  right: 97px;
+  bottom: 0px;
+  width: 125px;
+  height: 116px;
+
+  @include media(desktop) {
+    right: 320px;
+    bottom: 10px;
+    width: 370px;
+    height: 344px;
+  }
+}
+
+#upperPhone {
+  position: absolute;
+  right: 102px;
+  bottom: 1px;
+
+  @include media(desktop) {
+    right: 295px;
+    bottom: 1px;
+  }
+}
+
+#lowerPhone {
+  position: absolute;
+  right: 21px;
+  bottom: 86px;
+
+  @include media(desktop) {
+    right: 46px;
+    bottom: -109px;
+  }
+}
+
+#cloudHeader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#cloudHero {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+
+  @include media(desktop) {
+    right: 0px;
+    top: 70px;
+  }
+}
