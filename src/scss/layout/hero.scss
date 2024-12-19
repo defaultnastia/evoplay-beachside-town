@@ -1,11 +1,11 @@
 .heroBackground {
   width: 100%;
+  min-width: 320px;
   height: 432px;
 
   background-color: $_mobile_background_primary;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  margin-bottom: 96px;
 
   @include media(desktop) {
     height: 625px;
@@ -67,7 +67,7 @@
 
 #palmIcon {
   position: absolute;
-  right: 97px;
+  right: 128px;
   bottom: 0px;
   width: 125px;
   height: 116px;
@@ -116,5 +116,15 @@
   @include media(desktop) {
     right: 0px;
     top: 70px;
+  }
+}
+
+#cloudInsideHero {
+  position: absolute;
+  bottom: 120px;
+  left: 0px;
+
+  @include media(desktop) {
+    display: none;
   }
 }

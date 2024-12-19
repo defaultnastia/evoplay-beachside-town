@@ -1,4 +1,4 @@
-<div class="heroBackground">
+<div class="heroBackground section" id="hero">
   <picture>
     <source
       media="(max-width: 1199px)"
@@ -17,13 +17,37 @@
     <img
       id="cloudHeader"
       src="./img/hero/mobile/1x/cloudHeader.png"
-      alt="Demo of the Beachside Town game"
+      alt="Cloud doodle"
       loading="lazy"
     />
   </picture>
+
+  <picture>
+    <source
+      media="(max-width: 1199px)"
+      srcset="
+        ./img/hero/mobile/1x/cloudHero.png,
+        ./img/hero/mobile/2x/cloudHero.png 2x
+      "
+    />
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./img/hero/desktop/1x/cloudHero.png,
+        ./img/hero/desktop/2x/cloudHero.png 2x
+      "
+    />
+    <img
+      id="cloudHero"
+      src="./img/hero/mobile/1x/cloudHero.png"
+      alt="Cloud doodle"
+      loading="lazy"
+    />
+  </picture>
+
   <div class="container heroContainer">
     <svg width="370" height="344" fill="#61B4D5" id="palmIcon">
-      <use href="../img/sprite.svg#palm"></use>
+      <use href="./img/sprite.svg#palm"></use>
     </svg>
 
     <div class="heroContent">
@@ -45,23 +69,15 @@
 
     <picture>
       <source
-        media="(max-width: 1199px)"
         srcset="
           ./img/hero/mobile/1x/cloudHero.png,
           ./img/hero/mobile/2x/cloudHero.png 2x
         "
       />
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./img/hero/desktop/1x/cloudHero.png,
-          ./img/hero/desktop/2x/cloudHero.png 2x
-        "
-      />
       <img
-        id="cloudHero"
+        id="cloudInsideHero"
         src="./img/hero/mobile/1x/cloudHero.png"
-        alt="Demo of the Beachside Town game"
+        alt="Cloud doodle"
         loading="lazy"
       />
     </picture>
