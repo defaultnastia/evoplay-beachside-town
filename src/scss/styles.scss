@@ -96,6 +96,8 @@ h3 {
   width: 130px;
   height: fit-content;
 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   @include media(desktop) {
     width: 170px;
     height: 48px;

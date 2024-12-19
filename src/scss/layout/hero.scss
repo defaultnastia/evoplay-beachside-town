@@ -66,7 +66,7 @@
 
 #palmIcon {
   position: absolute;
-  right: 97px;
+  right: 128px;
   bottom: 0px;
   width: 125px;
   height: 116px;
@@ -115,5 +115,15 @@
   @include media(desktop) {
     right: 0px;
     top: 70px;
+  }
+}
+
+#cloudInsideHero {
+  position: absolute;
+  bottom: 120px;
+  left: 0px;
+
+  @include media(desktop) {
+    display: none;
   }
 }
