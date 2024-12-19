@@ -5,7 +5,6 @@
   background-color: $_mobile_background_primary;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  margin-bottom: 96px;
 
   @include media(desktop) {
     height: 625px;

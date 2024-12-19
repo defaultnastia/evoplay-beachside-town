@@ -1,0 +1,39 @@
+.galleryContainer h2 {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.galleryList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.galleryList li h3 {
+  margin-bottom: 8px;
+}
+
+.galleryList li p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.galleryList li img {
+  width: 280px;
+  height: 480px;
+
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @include media(desktop) {
+    width: 262px;
+    height: 456px;
+  }
+}
