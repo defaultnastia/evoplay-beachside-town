@@ -13,7 +13,7 @@
     />
     
     <script type="module" crossorigin src="/evoplay-beachside-town/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/evoplay-beachside-town/assets/styles-7f3c76f9.css">
+    <link rel="stylesheet" href="/evoplay-beachside-town/assets/styles-f55b796b.css">
   </head>
 
   <body>
@@ -38,7 +38,7 @@
       </a> -->
       <!-- test, to be deleted -->
 
-      <div class="heroBackground">
+      <div class="heroBackground section" id="hero">
   <picture>
     <source
       media="(max-width: 1199px)"
@@ -51,13 +51,31 @@
     <img
       id="cloudHeader"
       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAB9CAYAAAD3E6DBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAnhSURBVHgB7ZppbFxXFcf/9y2zeMa7ncRLm6QNcVbRNKR1hNKKVBVIKBIgUUAtyodCQhAkH8gHPkTIogUhPrCpTUoJgioUgSOB1LC0igg0haZpSZulzr45cZrYHs+WWd7MvPcu575ZOnbGzhg1ejPR/Ulv3v50zz3nnnPuuQNIJBKJRCKRSCQSiUQikUgkEolEIpFIJBLJXQKbdDbwTw3tzXOg6YtVWK0WY2nYnnHo5gi+tmIMjHHUGXkBd59fpOQy3+CqugGK3e3TtECbX+F+zUtPKAgls0bMSA8zph20TeslbF7yVr0Iy/DC0FOMeX/a0qy0fmlJC3u8qwG9LR7WozLoCodFYnAwHknb7HDY4H8+l+Bvjhpvh2OhHdiy+gBqHbb7XHLDGxPWyZRlh8ycfZ1zO2ZxK2bbdpS2MG0hcWzatrgWNi37UCJrPXYgZCq/vbQLu472oIZhGw6GrBfWtcNnc6ZzxnMKZ9qUh2zalLJzodWTcYYDN3J47viNC2PR9AZs7juNGkT5VI8fHoszRqPRZrcK5zxU4Vqvn7YGHQNr7rl/dU/rETx/7CuoQZQmncZa4YSxKl+i5xp1jibaa/Ty5hWd/sf7un5D5vp51BhKysgwk02NFzMjnrXox99AHyBzJX+ELy7u1PsXdu/Bi++tQQ2hnE9xp8HKLF+kAIIgbcVgQYKyjUs7/UvmdQ3i5eOtqBGUWMZEhkS0CheqDW5chA/qFV5QvdiRtbKvLu24N5AN7KQHZttndwTlB5/ogJdam0Oh0YUbU/fliGs5EilNL6ll7wiJurwqW7e44wn86uyTqAGUoHAU1DIvzzsZoYlModHl21RidHEiA4jxW94ZNv18pquRdQS9P8TzQ0G4jOJYGJ9salmy1+MTDMNJhiSHo12KIU48NOk8SsenQkAaeSdTbovi/Sb66tqF7d00QL8Ml8mHPTa5kT662uAB3onQuIowBOm4WRW9wRxho0kgISSZotqitulRfHJugP3F63mKznfDRSo6AgpxuI+Max4JlqPjGJniRVLXpRQwTBvJ54zXSi8LSzDpBsVX3tHg7ScznQcXqezpmIhtHEua8ybnaIXnx5fYM1SOm064KYxf8eHeFq8KZj4EF5nWlYvGtno42tXJXlJgY3rEe1phUxilAIrWDReZMVYJc2vWp/eklSholtNYZeFMVryWgYtUFFC0yirsDeQ1pqI6RGZD45NZFng4RqPRwjm4SKXJA0zabAoFl8mxjBv5XqhGg6RxnlXAaJzy/deidjyTvYa05uo06hYBi4L8J2TiTAxo82uTspWZIO0xg4oAb46l+Sunollusu9ie18ILnKLiRZySnT5bOw8dh1G1q76Y2LM/vVKBINHh1M8l34ao78bhMs4AjpOZIqKljTp2LKyDXsvhlE19I3P9bYqvS2BJDR7PwYGqu+dO4QjoGiF6P3y1ojjpxf5EWA2TidzVdmo0L6HIt/XV8zr1OF5FjWAUvohAYQ1FqdNwmvqlFNu/Xgr9p4Ji1S0KoQX7W7QtU8vnbsJO4fWwWUc2UTbk/T74xMxjKcsJ2NxbtKN/g4NC/wmhiLJGadQ5Yjvfba3ibW3tfwIg4PVRpg7glKMeZQ6Ymgii10X4s55MQ6KCtqTfc04NJosRfFqlElpLHtkQVM/Isu/ABdRio1VSaIAuc+raf5h7ChMo9ZQMfhsOI3sLGo3onP65wTAdG0LXKRkolmaCl1LGmjnluNgnISaOZrAHI05eemNtFV1yiZoofcavL6H8dzhdriEUhSGFIfLMQsr233OjaKmhKnS8gSCmoab5IW0Kj9cnIUEAyp9UF8Ml1BE/c8QSxRnY+RcGNbf0+iUAZ3QgfwgDWcYrifTaNDV0tgsIkyYlz1fMmFWKPEYdg5e32wU/5GinaMaxCDlZD87GsWOh3swV8/3vdM6anmczn5y5iZ1gg/dfqWkcic5KEhDQnPqFKbl54qcHmGUz/J3wzk+Fs+mEDDPwCVY00un7KbGAJY1B6gOk8Tabh39XX6qXHuRNEzsG47jjaspbFzVg0fb/M5LkxICkug0pZ2vXZ2wH5oTUJr9PiRNxs/F0/zQxbBpJBKb8K2Ve+AS7O8hy17eouCDBPDKqInj42kMRxNI01Rugiow9zX4sH5BJ/r8+bR1qhcVWiQz5s+8dSV+KZJ6RoG60oYtFlHDSN7ch20PuJqPsohFEyNq5ChNS18fY44TEdMlVqhLCHsrxpJplzzp/tvjhvXL/17ais3LdqGGUIoLLkFy6cJ/ijUHkXoohWm8OBaCzbieS/ceaPepjQHfdvzib17UEKVAL4q/QkBeZoNKlb5PvBKgZ9d2N85H4GOPooYozQdzDKWE2maYVUAXz2ZJ1as7g0yxsxtRQ+SVRD/xLNVfaK+Rz9f+j1mc+NC9QR/zevRH3E6wy3HCWorscjj2YaC2ZrleKHBqpyp4W1PjPIT6FqFGUM7SWvuRMfKiqcLsoYJwkzKUaWCFgvBcnUK+ze5HjaCdjOUPTDVvZtNVrIs563SI1UDxjE/MklXV9VWlIiVHqVYQriiYiIvvU9mCVaiuFbWrFZbfRpOU+6mqgRqhVJOZSnE2IPZiDfDlE6M4GjcqdoL4SIrG31iG86sxI4l46hhqhNJ8UFCaGbDJzsZDPbCotQFn4rdW4YvPkQb5n85HWC6b+xe2P3gFNcKk6Z0wQauwVli+UiR8ftg00cbzRWDSKBfXhOapko2JHLf3nY8q741ERjjPfA+zC6N3lEkCCu1lKA7+/P3rWNnixYLOIFpVHScjaX4lFMX67vn89YiBm7Q4b1M3pLImzkZT+CBqmEYmvR/Gze9gW7+raxFTYb8e5pOGoOj6URLg1bE0RkioGymLUwne9PlULOoIqMeuxBK5bGYnPTgMWzNpHSlMlakj2LpshLyM64XeqdwiYBFhpiJ9ExPfA+MJ84/vjjwLyzyIrHkN21bVlJZmYtoSi7NkVqiqPdjaoO5VPCvsTUu/jzrjtn/WIcfDm3UFgaDyGAaGPKgzbiugiN8iiC8M+JvQmZyLOmNGAcvjo6YrtKzim4M6Y+Y1euSDPmmQqeRMYZt3n4mKYG8o4HHTtGhAjqPOuL2TIUUmaTJ8LZaJoNNXMylYtdz+L48k4TvjaTuRzv0bTyzPos5QxD8jxEH52l/xWGjvomHxVy+MWrQ6+iLqEK3wtytRpRcCMfHHJpG9iHnDiXDO3nPyuhlPpHbg28tfQx2i/eFy1GzRNK2F1iS8Hs0OGTlGNVxcDiWsy6HkYW6lduGbq36POkX7x4mLy6H5+2ilcj55yW6YuQQ4ld3NxGGEV53AQO0l0LOEz7aAJpFIJBKJRCKRSCQSiUQikUgkEolEIpHcpfwP9QPu6xYVxQ0AAAAASUVORK5CYII="
-      alt="Demo of the Beachside Town game"
+      alt="Cloud doodle"
       loading="lazy"
     />
   </picture>
+
+  <picture>
+    <source
+      media="(max-width: 1199px)"
+      srcset="/evoplay-beachside-town/assets/cloudHero-38209e6d.png , /evoplay-beachside-town/assets/cloudHero-77cbe742.png 2x"
+    />
+    <source
+      media="(min-width: 1200px)"
+      srcset="/evoplay-beachside-town/assets/cloudHero-fa1c2365.png , /evoplay-beachside-town/assets/cloudHero-b1e92d5d.png 2x"
+    />
+    <img
+      id="cloudHero"
+      src="/evoplay-beachside-town/assets/cloudHero-38209e6d.png"
+      alt="Cloud doodle"
+      loading="lazy"
+    />
+  </picture>
+
   <div class="container heroContainer">
     <svg width="370" height="344" fill="#61B4D5" id="palmIcon">
-      <use href="../img/sprite.svg#palm"></use>
+      <use href="/evoplay-beachside-town/assets/sprite-85c88726.svg#palm"></use>
     </svg>
 
     <div class="heroContent">
@@ -79,17 +97,12 @@
 
     <picture>
       <source
-        media="(max-width: 1199px)"
         srcset="/evoplay-beachside-town/assets/cloudHero-38209e6d.png , /evoplay-beachside-town/assets/cloudHero-77cbe742.png 2x"
       />
-      <source
-        media="(min-width: 1200px)"
-        srcset="/evoplay-beachside-town/assets/cloudHero-fa1c2365.png , /evoplay-beachside-town/assets/cloudHero-b1e92d5d.png 2x"
-      />
       <img
-        id="cloudHero"
+        id="cloudInsideHero"
         src="/evoplay-beachside-town/assets/cloudHero-38209e6d.png"
-        alt="Demo of the Beachside Town game"
+        alt="Cloud doodle"
         loading="lazy"
       />
     </picture>
@@ -130,7 +143,7 @@
   </div>
 </div>
 
-      <div class="aboutBackground">
+      <div class="aboutBackground section" id="about">
   <div class="container aboutContent">
     <h2>About Us</h2>
     <p>
@@ -148,7 +161,107 @@
 
       
       
-      
+      <div class="container section galleryContainer" id="gallery">
+  <h2>Gallery</h2>
+  <ul class="galleryList">
+    <li>
+      <h3>Gameplay Screenshots</h3>
+      <p>
+        Showcasing the town-building process, merging mechanics, and vibrant
+        beach environments.
+      </p>
+      <picture>
+        <source
+          media="(max-width: 1199px)"
+          srcset="/evoplay-beachside-town/assets/galleryScreenshots-1ff5c711.png , /evoplay-beachside-town/assets/galleryScreenshots-ed3d769a.png 2x"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/evoplay-beachside-town/assets/galleryScreenshots-d2294097.png , /evoplay-beachside-town/assets/galleryScreenshots-733553d7.png 2x"
+        />
+        <img
+          class="galleryImage"
+          src="/evoplay-beachside-town/assets/galleryScreenshots-1ff5c711.png"
+          alt="Screenshot from the Beachside Town game"
+          loading="lazy"
+        />
+      </picture>
+    </li>
+
+    <li>
+      <h3>Beachside Homes</h3>
+      <p>
+        Examples of the stunning homes and various attractions that can be built
+        in the game.
+      </p>
+      <picture>
+        <source
+          media="(max-width: 1199px)"
+          srcset="/evoplay-beachside-town/assets/galleryHome-212e5afb.png , /evoplay-beachside-town/assets/galleryHome-242ffdb2.png 2x"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/evoplay-beachside-town/assets/galleryHome-c30fe4de.png , /evoplay-beachside-town/assets/galleryHome-4668bcbe.png 2x"
+        />
+        <img
+          class="galleryImage"
+          src="/evoplay-beachside-town/assets/galleryHome-212e5afb.png"
+          alt="Screenshot from the Beachside Town game"
+          loading="lazy"
+        />
+      </picture>
+    </li>
+
+    <li>
+      <h3>Landscapes</h3>
+      <p>
+        Gorgeous coastal views, complete with beaches, sunsets, and lush
+        tropical scenery.
+      </p>
+      <picture>
+        <source
+          media="(max-width: 1199px)"
+          srcset="/evoplay-beachside-town/assets/galleryLandscapes-346d2ef9.png , /evoplay-beachside-town/assets/galleryLandscapes-97be976a.png 2x"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/evoplay-beachside-town/assets/galleryLandscapes-2c58a32b.png , /evoplay-beachside-town/assets/galleryLandscapes-4940abdc.png 2x"
+        />
+        <img
+          class="galleryImage"
+          src="/evoplay-beachside-town/assets/galleryLandscapes-346d2ef9.png"
+          alt="Screenshot from the Beachside Town game"
+          loading="lazy"
+        />
+      </picture>
+    </li>
+
+    <li>
+      <h3>Character Interactionss</h3>
+      <p>
+        The residents of Beachside Town interacting with the environment and
+        completing tasks.
+      </p>
+      <picture>
+        <source
+          media="(max-width: 1199px)"
+          srcset="/evoplay-beachside-town/assets/galleryInteractions-7a33fa7e.png , /evoplay-beachside-town/assets/galleryInteractions-d25b8383.png 2x"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/evoplay-beachside-town/assets/galleryInteractions-b79a7cff.png , /evoplay-beachside-town/assets/galleryInteractions-d764275c.png 2x"
+        />
+        <img
+          class="galleryImage"
+          src="/evoplay-beachside-town/assets/galleryInteractions-7a33fa7e.png"
+          alt="Screenshot from the Beachside Town game"
+          loading="lazy"
+        />
+      </picture>
+    </li>
+  </ul>
+</div>
+
       
     </main>
 
