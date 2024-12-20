@@ -32,6 +32,8 @@
   border-radius: 16px;
   overflow: hidden;
 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   @include media(desktop) {
     width: 262px;
     height: 456px;
@@ -39,7 +41,5 @@
 }
 
 .galleryImage {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
   object-fit: cover;
 }
