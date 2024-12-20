@@ -39,10 +39,19 @@
   }
 }
 
-.section {
-  margin-bottom: 48px;
+.section:not(:first-child) {
+  padding-top: 48px;
+
+  &:last-child {
+    margin-bottom: 48px;
+  }
+
   @include media(desktop) {
-    margin-bottom: 96px;
+    padding-top: 96px;
+
+    &:last-child {
+      margin-bottom: 96px;
+    }
   }
 }
 
