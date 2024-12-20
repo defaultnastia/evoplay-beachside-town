@@ -1,5 +1,5 @@
 .modal {
-  // display: none;
+  display: none;
   position: fixed;
   z-index: 101;
   right: 0;
@@ -34,7 +34,7 @@
   padding: 8px;
 }
 
-.close {
+.closeBtn {
   display: block;
   padding-top: 20px;
   padding-right: 27px;
