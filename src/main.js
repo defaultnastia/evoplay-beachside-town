@@ -1,2 +1,2 @@
-import './scripts/faq/faq';
 import './scripts/mobileMenu.js';
+import './scripts/faq.js';
