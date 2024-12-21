@@ -42,6 +42,9 @@
   letter-spacing: 0.02em;
   color: $_header_text;
   padding: 3px 8px;
+  border-radius: 8px;
+  transition: 0.2s ease-out;
+  transition-property: background-color, box-shadow, scale;
 }
 
 .navLink:hover,
@@ -49,4 +52,8 @@
   background-color: $_header_hoverColor;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 10px;
+}
+
+.navLink:active {
+  scale: 0.9;
 }
