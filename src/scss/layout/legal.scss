@@ -12,6 +12,8 @@
   @include media(desktop) {
     padding: 48px 46px 96px;
     width: 1200px;
+
+    margin-bottom: 96px;
   }
 }
 
@@ -29,6 +31,7 @@ a.blueButton.backButton {
 
 .mobileBack {
   display: block;
+  padding: 8px;
   margin-bottom: 32px;
 
   @include media(desktop) {
