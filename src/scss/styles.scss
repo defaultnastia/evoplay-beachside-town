@@ -76,7 +76,7 @@ h3 {
   }
 }
 
-.backButton {
+.blueButton {
   display: flex;
   gap: 12px;
   padding: 8px 12px;
@@ -85,11 +85,48 @@ h3 {
 
   border: none;
   border-radius: 12px;
-  background-color: #47c9ff;
+  background-color: $_button_color;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
 
   font-size: 16px;
   font-weight: 600;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: $_pressed_color;
+    // border-color: transparent;
+    border-radius: 50%;
+    transform: translate(-10px, -70px) scale(0.1);
+    opacity: 0;
+    z-index: -1;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform-origin: 100px 100px;
+    transform: scale(1) translate(-10px, -70px);
+  }
 }
 
 .playButton {
@@ -100,16 +137,18 @@ h3 {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  @include media(desktop) {
-    width: 170px;
-    height: 48px;
-  }
-}
-
-.buttonHover {
   transition: scale 0.2s ease-out;
 
   &:hover {
     scale: 1.1;
+  }
+
+  &:active {
+    scale: 0.9;
+  }
+
+  @include media(desktop) {
+    width: 170px;
+    height: 48px;
   }
 }

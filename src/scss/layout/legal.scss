@@ -5,34 +5,57 @@
 .legalContainer {
   position: relative;
 
-  width: 1200px;
+  width: 320px;
   margin: 0 auto;
   padding: 24px 16px 48px;
 
   @include media(desktop) {
     padding: 48px 46px 96px;
+    width: 1200px;
   }
 }
 
-.legalContainer .backButton {
-  position: fixed;
-  top: 46px;
-  left: 46px;
+a.blueButton.backButton {
+  display: none;
+
+  @include media(desktop) {
+    position: fixed;
+    top: 46px;
+    left: 46px;
+
+    display: flex;
+  }
+}
+
+.mobileBack {
+  display: block;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 .legalContainer h1 {
   margin-bottom: 24px;
 
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
 
-  text-align: center;
+  text-align: left;
 
   @include media(desktop) {
+    font-weight: 800;
     font-size: 52px;
     line-height: 1.5;
+
+    text-align: center;
   }
+}
+
+.legalContainer p {
+  text-indent: 1em;
 }
 
 .legalDisclaimer {
@@ -67,7 +90,7 @@
   }
 }
 
-.legalList p:not(:has(+ ul)):not(:last-child) {
+.legalList p:not(:last-child) {
   margin-bottom: 16px;
 }
 
