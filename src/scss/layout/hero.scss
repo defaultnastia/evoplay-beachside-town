@@ -102,6 +102,27 @@
   }
 }
 
+// #upperPhone {
+//   position: absolute;
+//   right: 104px;
+//   bottom: 16px;
+
+//   @include media(desktop) {
+//     right: 295px;
+//     bottom: 1px;
+//   }
+// }
+
+// #lowerPhone {
+//   position: absolute;
+//   right: 20px;
+//   bottom: 120px;
+
+//   @include media(desktop) {
+//     right: 46px;
+//     bottom: -109px;
+//   }
+
 #cloudHeader {
   position: absolute;
   top: 0px;

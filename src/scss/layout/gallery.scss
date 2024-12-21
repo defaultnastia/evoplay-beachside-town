@@ -12,7 +12,7 @@
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
   }
 }
 
@@ -25,15 +25,21 @@
   font-size: 14px;
 }
 
-.galleryList li img {
+.imageWrapper {
   width: 280px;
   height: 480px;
 
-  border-radius: 18px;
+  border-radius: 16px;
+  overflow: hidden;
+
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   @include media(desktop) {
     width: 262px;
     height: 456px;
   }
+}
+
+.galleryImage {
+  object-fit: cover;
 }
