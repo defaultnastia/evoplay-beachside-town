@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-import icons from '../../img/sprite.svg';
+import icons from '../img/sprite.svg';
 
 // ============ DATA ============
 
@@ -43,6 +43,7 @@ const faqArray = [
 const faqSectionParentEl = document.querySelector('ul.faq-list');
 
 function renderFaqSection(array) {
+  if (!faqSectionParentEl) return;
   faqSectionParentEl.innerHTML = createFaqMarkup(array);
 }
 
