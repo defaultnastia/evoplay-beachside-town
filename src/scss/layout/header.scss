@@ -1,0 +1,59 @@
+.header {
+  background-color: $_input_color;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  line-height: 0;
+
+  @include media(desktop) {
+    height: 64px;
+    border-bottom: 2px solid $_header_borderColor;
+    justify-content: center;
+  }
+}
+
+.burgerMenu {
+  display: block;
+  margin-left: auto;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.navList {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    width: 641px;
+    gap: 64px;
+    margin: 0 auto;
+  }
+}
+
+.navLink {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: $_header_text;
+  padding: 3px 8px;
+  border-radius: 8px;
+  transition: 0.2s ease-out;
+  transition-property: background-color, box-shadow, scale;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: $_header_hoverColor;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navLink:active {
+  scale: 0.9;
+}
