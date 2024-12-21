@@ -72,6 +72,23 @@ a.blueButton.backButton {
   gap: 32px;
 }
 
+.legalList a {
+  color: $_link_color;
+  text-decoration: underline;
+  padding: 0px 8px;
+  border-radius: 4px;
+
+  @include media(desktop) {
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      box-shadow: inset 300px 0 0 0 $_link_color;
+    }
+  }
+}
+
 .legalContainer h2 {
   font-weight: 400;
   font-size: 20px;
