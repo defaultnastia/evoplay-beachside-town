@@ -1,0 +1,117 @@
+.faq-header {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+/* #region accordion */
+.faq-list {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  font: inherit;
+
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.faq-list li.ac.faq-list-item {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border: none;
+  background-color: transparent;
+}
+/* #endregion accordion */
+
+/* #region accordion header */
+li.faq-list-item div.faq-list-header-box {
+  height: fit-content;
+  padding: 24px 12px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  background-color: $_accent_color;
+
+  @include media(desktop) {
+    padding: 20px 24px;
+  }
+}
+
+h5.faq-list-header {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+/* #endregion accordion header */
+
+/* #region accordion content */
+li.faq-list-item div.faq-list-content-box {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+
+  overflow: hidden;
+}
+
+li.faq-list-item div.faq-list-content-box > p.faq-list-content {
+  width: 250px;
+  padding: 18px 24px;
+
+  background-color: $_input_color;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+
+  @include media(desktop) {
+    width: 1080px;
+    padding: 12px 24px;
+
+    font-size: 20px;
+  }
+}
+/* #endregion accordion content */
+
+/* #region accordion arrow */
+button.arrow-button {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+}
+
+.arrow-icon {
+  transition: transform 0.5s ease-out;
+}
+
+.ac .ac-trigger::after {
+  content: none !important;
+}
+/* #endregion accordion arrow */
