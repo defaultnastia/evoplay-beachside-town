@@ -1,22 +1,36 @@
 .footer {
   height: 144px;
+  width: 100%;
+  display: flex;
+
+  @include media(desktop) {
+    height: 245px;
+  }
+}
+
+.footer .container {
+  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-template-columns: auto auto;
-
-  background-image: url('../../img/footer/wave_mob.svg');
   @include media(desktop) {
-    height: 245px;
-    background-image: url('../../img/footer/wave_desk.svg');
+    padding: 58px 46px 52px;
     align-items: start;
   }
 }
 
-.footer.container {
-  padding-bottom: 32px;
+.footerBackground {
+  width: 100%;
+  min-width: 320px;
+  background-color: $_main_bg_color;
+  background-image: url('../../img/footer/wave_mob.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include image-2x('../../img/footer/wave_mob@2.webp', 100%, 144px);
   @include media(desktop) {
-    padding: 57px 46px 52px;
+    background-color: $_main_bg_color;
+    background-image: url('../../img/footer/wave_desk.webp');
+    @include image-2x('../../img/footer/wave_desk@2.webp', 100%, 245px);
   }
 }
 
