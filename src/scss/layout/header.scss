@@ -15,6 +15,12 @@
   }
 }
 
+.legalBody .header {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
 .burgerMenu {
   display: block;
   margin-left: auto;
