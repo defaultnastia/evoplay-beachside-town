@@ -3,7 +3,7 @@
   min-width: 320px;
   height: 432px;
 
-  background-color: $_mobile_background_primary;
+  background-color: $_accent_color;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -127,7 +127,10 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 100;
+
+  @include media(desktop) {
+    z-index: 4;
+  }
 }
 
 #cloudHero {
