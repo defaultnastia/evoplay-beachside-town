@@ -1,0 +1,79 @@
+.footer {
+  height: 144px;
+  width: 100%;
+  display: flex;
+
+  @include media(desktop) {
+    height: 245px;
+  }
+}
+
+.footer .container {
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(desktop) {
+    padding: 58px 46px 52px;
+    align-items: start;
+  }
+}
+
+.footerBackground {
+  width: 100%;
+  min-width: 320px;
+  background-color: $_main_bg_color;
+  background-image: url('../../img/footer/wave_mob.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include image-2x('../../img/footer/wave_mob@2.webp', 100%, 144px);
+  @include media(desktop) {
+    background-color: $_main_bg_color;
+    background-image: url('../../img/footer/wave_desk.webp');
+    @include image-2x('../../img/footer/wave_desk@2.webp', 100%, 245px);
+  }
+}
+
+.footer .playButton {
+  display: block;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    width: 250px;
+  }
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  @include media(desktop) {
+    font-size: 16px;
+    margin-top: 32px;
+    flex-direction: row;
+    gap: 52px;
+  }
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  @include media(desktop) {
+    gap: 14px;
+  }
+}
+
+.document {
+  text-decoration: underline;
+  padding: 0px 8px;
+  &:hover {
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0px 8px;
+    color: #fff;
+    box-shadow: inset 300px 0 0 0 $_link_color;
+  }
+}
