@@ -1,0 +1,7 @@
+.reviews {
+  height: 298px;
+  background-color: $_mobile_background_secondary;
+  @include media(desktop) {
+    height: 410px;
+  }
+}
