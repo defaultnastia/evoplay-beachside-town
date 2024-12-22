@@ -1,8 +1,5 @@
-.advatages {
-  margin-top: 48px;
-  @include media(desktop) {
-    width: 1106px;
-  }
+.advantages {
+  margin: 0 auto;
 }
 
 .advantagesTitle {
@@ -76,25 +73,30 @@
   }
 }
 
-.advantagesGigImage {
+.advantagesBlock {
+  width: 280px;
+  height: 312px;
+  position: relative;
   @include media(desktop) {
     width: 544px;
-    position: relative;
+    height: 466px;
   }
 }
 
-.advantagesGigImage .blueButton {
+.advantagesBlock .blueButton {
   border-radius: 16px;
   margin: 24px auto;
-  width: 100%;
+  width: 277px;
   height: 47px;
   font-size: 20px;
   font-weight: 700;
   justify-content: center;
+  z-index: 110;
+  position: absolute;
   @include media(desktop) {
+    position: absolute;
     width: 136px;
     height: 66px;
-    position: absolute;
     margin: 0;
     bottom: 18px;
     right: 32px;
