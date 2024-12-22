@@ -23,14 +23,14 @@
   width: 100%;
   min-width: 320px;
   background-color: $_main_bg_color;
-  background-image: url('../../img/footer/wave_mob.webp');
+  background-image: url('../img/footer/wave_mob.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  @include image-2x('../../img/footer/wave_mob@2.webp', 100%, 144px);
+  @include image-2x('../img/footer/wave_mob@2.webp', 100%, 144px);
   @include media(desktop) {
     background-color: $_main_bg_color;
-    background-image: url('../../img/footer/wave_desk.webp');
-    @include image-2x('../../img/footer/wave_desk@2.webp', 100%, 245px);
+    background-image: url('../img/footer/wave_desk.webp');
+    @include image-2x('../img/footer/wave_desk@2.webp', 100%, 245px);
   }
 }
 
