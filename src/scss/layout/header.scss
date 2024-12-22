@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 100;
+  z-index: 3;
   line-height: 0;
 
   @include media(desktop) {
@@ -55,7 +55,7 @@
 
 .navLink:hover,
 .navLink:focus {
-  background-color: $_header_hoverColor;
+  background-color: $_accent_color;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
