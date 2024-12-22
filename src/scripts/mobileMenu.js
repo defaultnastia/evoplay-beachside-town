@@ -8,14 +8,17 @@
     modal.style.display = 'block';
   };
 
-  const closeModal = () => {
+  closeMenu.onclick = function () {
     modal.style.display = 'none';
   };
 
-  closeMenu.onclick = closeModal;
-  linkMenu.onclick = closeModal;
+  linkMenu.onclick = function () {
+    modal.style.display = 'none';
+  };
 
   window.onclick = function (event) {
-    if (event.current.target !== openMenu) closeModal;
+    if (event.current.target == modal) {
+      modal.style.display = 'none';
+    }
   };
 })();

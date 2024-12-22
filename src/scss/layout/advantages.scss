@@ -1,0 +1,104 @@
+.advantages {
+  margin: 0 auto;
+}
+
+.advantagesTitle {
+  font-family: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 32px;
+  }
+}
+
+.advantagesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.advantagesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  display: flex;
+  gap: 24px;
+  @include media(desktop) {
+    width: 542px;
+    gap: 12px;
+  }
+}
+
+.advantagesItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.advantagesItem p {
+  width: 181px;
+  @include media(desktop) {
+    width: 439px;
+  }
+}
+
+.advantagesImg {
+  object-fit: cover;
+  @include media(desktop) {
+  }
+}
+
+.advItemSpan {
+  font-weight: 700;
+  font-size: 16px;
+  color: $_header_color;
+  line-height: 24px;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.advantagesBlock {
+  width: 280px;
+  height: 312px;
+  position: relative;
+  @include media(desktop) {
+    width: 544px;
+    height: 466px;
+  }
+}
+
+.advantagesBlock .blueButton {
+  border-radius: 16px;
+  margin: 24px auto;
+  width: 277px;
+  height: 47px;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  @include media(desktop) {
+    position: absolute;
+    width: 136px;
+    height: 66px;
+    margin: 0;
+    bottom: 18px;
+    right: 32px;
+  }
+}
