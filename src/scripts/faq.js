@@ -43,7 +43,6 @@ const faqArray = [
 const faqSectionParentEl = document.querySelector('ul.faq-list');
 
 function renderFaqSection(array) {
-  if (!faqSectionParentEl) return;
   faqSectionParentEl.innerHTML = createFaqMarkup(array);
 }
 
