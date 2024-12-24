@@ -19,12 +19,7 @@
   });
 
   window.onclick = function (event) {
-    if (
-      !modal.contains(event.target) &&
-      // event.target !== modal &&
-      // event.target !== openMenu &&
-      !openMenu.contains(event.target)
-    ) {
+    if (!modal.contains(event.target) && !openMenu.contains(event.target)) {
       modal.style.display = 'none';
     }
   };
