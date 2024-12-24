@@ -9,11 +9,11 @@ const swiper = new Swiper('.reviewsSwiper', {
   centeredSlides: true,
   spaceBetween: 20,
   initialSlide: 2,
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   slideToClickedSlide: true,
   breakpoints: {
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
       spaceBetween: 20,
       initialSlide: 2,
     },
