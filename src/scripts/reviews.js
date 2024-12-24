@@ -7,6 +7,7 @@ import { Pagination } from 'swiper/modules';
 const swiper = new Swiper('.reviewsSwiper', {
   modules: [Pagination],
   centeredSlides: true,
+  grabCursor: true,
   spaceBetween: 20,
   initialSlide: 2,
   slidesPerView: 1.2,

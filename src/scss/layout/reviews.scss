@@ -53,6 +53,8 @@
 
   box-shadow: 0 2px 4px 0 #0099d9, inset 0 2px 4px 0 #00b4ff;
 
+  transition: height 0.2s ease;
+
   @include media(desktop) {
     width: 376px;
     height: 156px;
@@ -71,11 +73,8 @@
   display: block;
   width: 86px;
   height: 86px;
-  object-fit: cover;
-}
 
-.reviewsSwiper .swiper-slide {
-  transition: height 0.2s ease;
+  object-fit: cover;
 }
 
 .reviewsSwiper .swiper-slide.active-slide {
@@ -84,21 +83,23 @@
 
 .swiper .reviewsTitle {
   margin-top: 26px;
-  font-size: 20px;
-  font-weight: 700;
   margin-bottom: -34px;
 
+  font-size: 20px;
+  font-weight: 700;
+
   @include media(desktop) {
-    font-size: 32px;
     margin-top: 62px;
     margin-bottom: -65px;
+
+    font-size: 32px;
   }
 }
 
 .author {
+  width: 140px;
   display: flex;
   flex-direction: column;
-  width: 140px;
 
   @include media(desktop) {
     width: 240px;
@@ -106,9 +107,10 @@
 }
 
 .authorHeader {
+  margin-bottom: 7px;
+
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 7px;
 
   @include media(desktop) {
     font-size: 20px;
@@ -126,16 +128,43 @@
   }
 }
 
-.swiper .swiper-pagination-bullet-active {
-  background-color: $_header_borderColor;
-}
-
 .swiper.reviewsSwiper .swiper-pagination {
   position: absolute;
   height: fit-content;
-  bottom: 10px;
+  bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include media(desktop) {
     bottom: 40px;
   }
+}
+
+.swiper.reviewsSwiper .swiper-pagination > span {
+  box-sizing: content-box;
+  width: 40px;
+  height: 2px;
+
+  border-radius: 40px;
+
+  background-color: $_review_color;
+
+  @include media(desktop) {
+    width: 82px;
+
+    filter: blur(1px);
+  }
+}
+
+.swiper.reviewsSwiper
+  .swiper-pagination
+  > span.swiper-pagination-bullet-active {
+  border-top: 1px solid $_header_borderColor;
+  border-bottom: 1px solid $_header_borderColor;
+
+  background-color: $_header_borderColor;
+
+  filter: none;
 }
