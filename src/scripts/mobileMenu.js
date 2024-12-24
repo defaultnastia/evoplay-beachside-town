@@ -3,6 +3,7 @@
   const openMenu = document.getElementById('open');
   const closeMenu = document.getElementById('close');
   const linkItem = document.getElementsByClassName('mobileMenuLink');
+  const linkItem = document.getElementsByClassName('mobileMenuLink');
 
   openMenu.onclick = function () {
     modal.style.display = 'block';

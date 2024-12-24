@@ -21,7 +21,7 @@ a.blueButton.backButton {
   display: none;
 
   @include media(desktop) {
-    position: fixed;
+    position: sticky;
     top: 46px;
     left: 46px;
 
