@@ -2,7 +2,7 @@
   const modal = document.getElementById('myModal');
   const openMenu = document.getElementById('open');
   const closeMenu = document.getElementById('close');
-  const linkMenu = document.getElementById('link');
+  const linkItem = document.getElementsByClassName('mobileMenuLink');
 
   openMenu.onclick = function () {
     modal.style.display = 'block';
@@ -12,12 +12,19 @@
     modal.style.display = 'none';
   };
 
-  linkMenu.onclick = function () {
-    modal.style.display = 'none';
-  };
+  Array.from(linkItem).forEach(element => {
+    element.onclick = function () {
+      modal.style.display = 'none';
+    };
+  });
 
   window.onclick = function (event) {
-    if (event.current.target == modal) {
+    if (
+      !modal.contains(event.target) &&
+      event.target !== modal &&
+      event.target !== openMenu &&
+      !openMenu.contains(event.target)
+    ) {
       modal.style.display = 'none';
     }
   };
