@@ -1,21 +1,14 @@
 #reviews {
-  width: 320px;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
 
   @include media(desktop) {
-    width: 1200px;
+    width: 100%;
   }
 }
 
-.reviewsSwiper {
-  width: 100%;
-  height: 298px;
-
-  @include media(desktop) {
-    height: 410px;
-  }
-
+.reviewsBackground {
   background-color: $_secondary_accent_color;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -26,6 +19,16 @@
     background-repeat: no-repeat;
     background-image: url('../img/reviews/background.webp');
     @include image-2x('../img/reviews/background.webp', 100%, 410px);
+  }
+}
+
+.reviewsSwiper {
+  width: 320px;
+  height: 298px;
+
+  @include media(desktop) {
+    height: 410px;
+    width: 1200px;
   }
 }
 
