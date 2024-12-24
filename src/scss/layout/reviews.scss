@@ -1,22 +1,66 @@
-.reviews {
+.swiper.reviewsSwiper {
   width: 100%;
   height: 298px;
-  margin-top: 44px;
-  padding: 26px 0 14px;
-  position: relative;
-  display: flex;
 
   @include media(desktop) {
     height: 410px;
-    margin-top: 96px;
-    padding: 62px 0 33px;
   }
 }
 
-.reviewsBackground {
+.swiper.reviewsSwiper > #reviewsSwiperWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide.review-item {
+  width: 276px;
+  height: 156px;
+  width: fit-content;
+  background-color: $_accent_color;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 180, 255, 0.4);
+  @include media(desktop) {
+    width: 376px;
+    height: 156px;
+    padding: 25px 12px;
+    gap: 24px;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+}
+
+.swiper.reviewsSwiper .swiper-pagination {
+  position: absolute;
+  bottom: 22px;
+
+  @include media(desktop) {
+    bottom: 62px;
+  }
+}
+
+.reviewsSwiper .swiper-slide {
+  transition: height 0.2s ease;
+}
+
+.reviewsSwiper .swiper-slide.active-slide {
+  height: 180px;
+}
+
+.reviewsSwiper {
   background-color: $_secondary_accent_color;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
   @include media(desktop) {
     background-color: $_main_bg_color;
     background-size: 100% 100%;
@@ -26,78 +70,16 @@
   }
 }
 
-.reviewsTitle {
+.swiper .reviewsTitle {
+  margin-top: 26px;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: -34px;
+
   @include media(desktop) {
     font-size: 32px;
-    margin-bottom: 45px;
-  }
-}
-
-.swiper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-
-  @include media(desktop) {
-  }
-}
-
-.swiper-slide {
-  display: flex;
-
-  @include media(desktop) {
-    // width: 376px;
-    // height: 180px;
-  }
-}
-.mySwiper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
-.swiper-scrollbar {
-}
-
-.slideItem {
-  width: 276px;
-  height: 156px;
-  background-color: $_accent_color;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  padding: 24px 12px;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid rgba(0, 180, 255, 0.4);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  @include media(desktop) {
-    width: 376px;
-    height: 156px;
-    padding: 25px 12px;
-    gap: 24px;
-  }
-}
-
-.slideItem:hover {
-  width: 276px;
-  height: 156px;
-  padding: 20px 12px;
-  @include media(desktop) {
-    width: 376px;
-    height: 156px;
-    padding: 25px 12px;
+    margin-top: 62px;
+    margin-bottom: -65px;
   }
 }
 
@@ -105,6 +87,7 @@
   display: flex;
   flex-direction: column;
   width: 140px;
+
   @include media(desktop) {
     width: 240px;
   }
@@ -114,6 +97,7 @@
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 7px;
+
   @include media(desktop) {
     font-size: 20px;
   }
@@ -123,39 +107,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+
   @include media(desktop) {
-    width: 240px;
     font-size: 16px;
     line-height: 19px;
   }
 }
 
-.authorAvatar {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  width: 88px;
-  height: 88px;
-}
-
-.paginationBlock {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 14px;
-  position: absolute;
-  bottom: 22px;
-
-  @include media(desktop) {
-    bottom: 62px;
-  }
-}
-
-.paginationLine {
-  width: 82px;
-  height: 2px;
-  background-color: $_review_color;
-  outline: 2px solid $_review_color;
-  // outline: 2px solid $_header_borderColor;
+.swiper .swiper-pagination-bullet-active {
+  background-color: $_header_borderColor;
 }

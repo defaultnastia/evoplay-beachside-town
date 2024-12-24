@@ -1,21 +1,34 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
+import { Pagination } from 'swiper/modules';
+
+const swiper = new Swiper('.reviewsSwiper', {
+  modules: [Pagination],
+  centeredSlides: true,
+  spaceBetween: 20,
+  initialSlide: 2,
+  slidesPerView: 1,
+  slideToClickedSlide: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      initialSlide: 2,
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
+
+swiper
+  .on('slideChange', function () {
+    swiper.slides.forEach(slide => slide.classList.remove('active-slide'));
+    swiper.slides[swiper.activeIndex].classList.add('active-slide');
+  })
+  .init(function () {
+    swiper.slides[swiper.activeIndex].classList.add('active-slide');
+  });

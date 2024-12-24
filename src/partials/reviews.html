@@ -1,149 +1,88 @@
-<section class="reviews reviewsBackground" id="reviews">
-  <div class="container">
+<section id="reviews" class="section container">
+  <div class="swiper reviewsSwiper">
     <h2 class="reviewsTitle">User Reviews</h2>
-    <div class="swiper mySwiper">
-      <div
-        class="mySwiper"
-        space-between="30"
-        slides-per-view="auto"
-        pagination="true"
-        pagination-clickable="true"
-      >
-        <div class="swiper-slide">
-          <div class="slideItem">
-            <div class="author">
-              <p class="authorHeader">CoastalDreamer</p>
-              <p class="authorText">
-                This game is a perfect escape. Designing my beachside town is
-                the highlight of my day.
-              </p>
-            </div>
-            <picture>
-              <source
-                srcset="./img/reviews/boy2.webp, ../img/reviews/boy2@2.webp 2x"
-                type="image/webp"
-              />
-              <img
-                class="authorAvatar"
-                src="./img/reviews/boy2.webp"
-                alt="boy2"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+    <ul id="reviewsSwiperWrapper" class="swiper-wrapper">
+      <li class="swiper-slide review-item">
+        <div class="author">
+          <p class="authorHeader">CoastalDreamer</p>
+          <p class="authorText">
+            This game is a perfect escape. Designing my beachside town is the
+            highlight of my day.
+          </p>
         </div>
-
-        <div class="swiper-slide">
-          <div class="slideItem">
-            <div class="author">
-              <p class="authorHeader">PuzzleFanatic</p>
-              <p class="authorText">
-                The quests are fun and rewarding, and I enjoy watching my town
-                grow into a beautiful paradise!
-              </p>
-            </div>
-            <picture>
-              <source
-                srcset="
-                  ./img/reviews/girl3.webp,
-                  ../img/reviews/girl3@2.webp 2x
-                "
-                type="image/webp"
-              />
-              <img
-                class="authorAvatar"
-                src="./img/reviews/boy2.webp"
-                alt="girl3"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+        <picture>
+          <source
+            srcset="./img/reviews/boy2.webp, ../img/reviews/boy2@2.webp 2x"
+            type="image/webp"
+          />
+          <img src="./img/reviews/boy2.webp" alt="boy2" loading="lazy" />
+        </picture>
+      </li>
+      <li class="swiper-slide review-item">
+        <div class="author">
+          <p class="authorHeader">PuzzleFanatic</p>
+          <p class="authorText">
+            The quests are fun and rewarding, and I enjoy watching my town grow
+            into a beautiful paradise!
+          </p>
         </div>
-
-        <div class="swiper-slide">
-          <div class="slideItem">
-            <div class="author">
-              <p class="authorHeader">TownBuilder</p>
-              <p class="authorText">
-                The customization options are amazing, and the gameplay is so
-                relaxing yet addictive!
-              </p>
-            </div>
-            <picture>
-              <source
-                srcset="./img/reviews/boy1.webp, ../img/reviews/boy1@2.webp 2x"
-                type="image/webp"
-              />
-              <img
-                class="authorAvatar"
-                src="./img/reviews/boy1.webp"
-                alt="boy1"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+        <picture>
+          <source
+            srcset="./img/reviews/girl3.webp, ../img/reviews/girl3@2.webp 2x"
+            type="image/webp"
+          />
+          <img src="./img/reviews/girl3.webp" alt="girl3" loading="lazy" />
+        </picture>
+      </li>
+      <li class="swiper-slide review-item active-slide">
+        <div class="author">
+          <p class="authorHeader">TownBuilder</p>
+          <p class="authorText">
+            The customization options are amazing, and the gameplay is so
+            relaxing yet addictive!
+          </p>
         </div>
-
-        <div class="swiper-slide">
-          <div class="slideItem">
-            <div class="author">
-              <p class="authorHeader">BeachLover</p>
-              <p class="authorText">
-                I love this game! The calming beach atmosphere and the
-                creativity in building are just perfect.
-              </p>
-            </div>
-            <picture>
-              <source
-                srcset="
-                  ./img/reviews/girl2.webp,
-                  ../img/reviews/girl2@2.webp 2x
-                "
-                type="image/webp"
-              />
-              <img
-                class="authorAvatar"
-                src="./img/reviews/girl2.webp"
-                alt="girl2"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+        <picture>
+          <source
+            srcset="./img/reviews/boy1.webp, ../img/reviews/boy1@2.webp 2x"
+            type="image/webp"
+          />
+          <img src="./img/reviews/boy1.webp" alt="boy1" loading="lazy" />
+        </picture>
+      </li>
+      <li class="swiper-slide review-item">
+        <div class="author">
+          <p class="authorHeader">BeachLover</p>
+          <p class="authorText">
+            I love this game! The calming beach atmosphere and the creativity in
+            building are just perfect.
+          </p>
         </div>
-
-        <div class="swiper-slide">
-          <div class="slideItem">
-            <div class="author">
-              <p class="authorHeader">IslandExplorer</p>
-              <p class="authorText">
-                The game is both relaxing and challenging at the same time.
-                Highly recommend it for anyone who loves simulation games!
-              </p>
-            </div>
-            <picture>
-              <source
-                srcset="./img/reviews/boy8.webp, ../img/reviews/boy8@2.webp 2x"
-                type="image/webp"
-              />
-              <img
-                class="authorAvatar"
-                src="./img/reviews/boy2.webp"
-                alt="boy8"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+        <picture>
+          <source
+            srcset="./img/reviews/girl2.webp, ../img/reviews/girl2@2.webp 2x"
+            type="image/webp"
+          />
+          <img src="./img/reviews/girl2.webp" alt="girl2" loading="lazy" />
+        </picture>
+      </li>
+      <li class="swiper-slide review-item">
+        <div class="author">
+          <p class="authorHeader">IslandExplorer</p>
+          <p class="authorText">
+            The game is both relaxing and challenging at the same time. Highly
+            recommend it for anyone who loves simulation games!
+          </p>
         </div>
-      </div>
-
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="paginationBlock">
-      <div class="paginationLine"></div>
-      <div class="paginationLine"></div>
-      <div class="paginationLine"></div>
-    </div>
+        <picture>
+          <source
+            srcset="./img/reviews/boy8.webp, ../img/reviews/boy8@2.webp 2x"
+            type="image/webp"
+          />
+          <img src="./img/reviews/boy8.webp" alt="boy8" loading="lazy" />
+        </picture>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
   </div>
 </section>
